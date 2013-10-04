@@ -1,0 +1,136 @@
+18. Se muestra Hola Mundo y un Nil debido a que este es del puts.
+
+21.	"\t\n" --> Este lo interpreta como tabulador y salgo de
+linea.
+	'\t\n' --> Este lo toma como esos valores, ya que los escapa.
+
+22.	%q = Implica comillas simples
+	%q{hello world\n} => "hello world\\n" . Es decir que escapa
+el \n como hacen las comillas simples del ejercicio 21.
+	%q{’a’ ’b’ ’c’} => "'a' 'b' 'c'" . Es decir agrupa todo entre
+comillas dobles.
+
+23.	%Q = Implica comillas dobles
+	%Q{hello world\n} => "hello world\n" . Es decir que escapa
+	el \n como hacen las comillas simples del ejercicio 21.
+	%Q{"a" "b" "c"} => "\"a\" \"b\" \"c\"" . Esta escapando las barras.
+
+24. 	c ="--4--\n--2--\n" . Significa que hubo interpolación.
+
+25.	c ="--\#{a}--\n--\#{b}--\n". Significa que no hubo interpolación de datos. Por las comillas simples en 'HERE'.
+
+26.	s[0,2] => "he"
+	s[-1,1] => "o"
+	s[0,10] => "hello"
+
+27. 	g = "hello word"
+
+28.	e = "..."
+
+29.	"2 2 2 "
+
+30.	["this", "is", "a", "test"] Es un array en el que se divide lo que se le paso.
+
+31.	["\\t", "\\n"] . Un array con \t y \n, es decir, escapados.
+
+32.	["\t", "\n"] . Un array con\t y \n sin escapar.
+
+33.	nils = [nil, nil, nil]
+
+34.	zeros = [0, 0, 0]
+
+35.	b = [[1, 2], [3, 4]]
+
+36.	c = [0, 2, 4]
+
+37.	=> b
+	=> ["d","e"]
+	=> ["a","b","c"]
+	=> ["a"]
+	=> ["d", "e"]
+
+38.	=> ["A","B","c","d","e"]
+	=> ["A","B","C","D","E"]
+	=> [1, 2, 3, "A", "B", "C", "D", "E"]
+	=> [3, "A", "B", "C", "D", "E"]
+	=> [3, "A", "B", "C", "D", "E", "Z"]
+	=> [3, "A", "B", "C", nil]
+
+39.	=> [1,2,3]
+	=> [1,2,3,4,5]
+	=> [1,2,3,4,5,[6,7,8]]
+	=> Error. No se puede convertir un Fixnum en un array.
+
+40.	=> ["a", "b", "c", "b", "a"]
+	=> ["a", "a"]
+
+41.	=> [0, 0, 0, 0, 0, 0, 0, 0]
+
+42.	=> [1]
+	=> [1, 2, 3]
+	=> [1, 2, 3, [4, 5, 6]]
+	=> [1, 2, 3, [4, 5, 6], 7, 8]
+
+43.	=> [1, 2, 3, 4, 5]
+	=> [5, 4, 3, 2, 1]
+	=> [2, 3, 4]
+	=> [4, 3, 2]
+
+44.	=> [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+	=> [1, 2, 3, 4, 5, 6, 7, 8, 9]
+	=> false
+	=> true
+	1 3 5 7 9 => 1...10
+	Error. Debido a que .to_a es un metodo de los array.
+
+45. 	=> true
+	=> true
+	=> true
+
+46.	=> TrueClass
+	=> FalseClass
+	hello
+	=> nil
+	=> nil
+	hello
+	=> nil
+
+47. 	=> Symbol
+	=> false
+	=> true
+	=> Symbol
+	=> true
+	=> true
+
+48.	Rub=> nil
+	RubJava=> nil
+
+49.	=> "3 rubies"
+
+50.	=> [4, 5]
+	=> 5
+	=> [1, 2, 3]
+
+51.	=> [:b, :a]
+	=> [2, 1]
+	=> {:b=>2, :c=>3, :a=>1}
+	=> {:b=>2, :c=>3, :a=>1}
+	=> {:b=>2, :c=>3}
+	=> {:a=>1}
+	=> {:a=>1}
+
+52.	Da error debido a que no hay un bloque. En el caso de que lo hubiera primero se le pasa un numero y luego se le pasa el otro.
+
+53.	=> {}
+	La diferencia es que el primero lo inicializas con el new y el otro no.
+
+54.	=> ["hello", "world", "hello", "LPP"]
+
+55.	Salio un error en el sort no tenia "<=>" en la version 1.8
+
+
+
+	
+
+
+
