@@ -1,0 +1,63 @@
+18. Se muestra Hola Mundo y un Nil debido a que este es del puts.
+
+21.	"\t\n" --> Este lo interpreta como tabulador y salgo de
+linea.
+	'\t\n' --> Este lo toma como esos valores, ya que los escapa.
+
+22.	%q = Implica comillas simples
+	%q{hello world\n} => "hello world\\n" . Es decir que escapa
+el \n como hacen las comillas simples del ejercicio 21.
+	%q{’a’ ’b’ ’c’} => "'a' 'b' 'c'" . Es decir agrupa todo entre
+comillas dobles.
+
+23.	%Q = Implica comillas dobles
+	%Q{hello world\n} => "hello world\n" . Es decir que escapa
+	el \n como hacen las comillas simples del ejercicio 21.
+	%Q{"a" "b" "c"} => "\"a\" \"b\" \"c\"" . Esta escapando las barras.
+
+24. 	c ="--4--\n--2--\n" . Significa que hubo interpolación.
+
+25.	c ="--\#{a}--\n--\#{b}--\n". Significa que no hubo interpolación de datos. Por las comillas simples en 'HERE'.
+
+26.	s[0,2] => "he"
+	s[-1,1] => "o"
+	s[0,10] => "hello"
+
+27. 	g = "hello word"
+
+28.	e = "..."
+
+29.	"2 2 2 "
+
+30.	["this", "is", "a", "test"] Es un array en el que se divide lo que se le paso.
+
+31.	["\\t", "\\n"] . Un array con \t y \n, es decir, escapados.
+
+32.	["\t", "\n"] . Un array con\t y \n sin escapar.
+
+33.	nils = [nil, nil, nil]
+
+34.	zeros = [0, 0, 0]
+
+35.	b = [[1, 2], [3, 4]]
+
+36.	c = [0, 2, 4]
+
+37.	=> b
+	=> ["d","e"]
+	=> ["a","b","c"]
+	=> ["a"]
+	=> ["d", "e"]
+
+38.	=> ["A","B","c","d","e"]
+	=> ["A","B","C","D","E"]
+	=> [1, 2, 3, "A", "B", "C", "D", "E"]
+	=> [3, "A", "B", "C", "D", "E"]
+	=> [3, "A", "B", "C", "D", "E", "Z"]
+	=> [3, "A", "B", "C", nil]
+
+39.	=> [1,2,3]
+	=> [1,2,3,4,5]
+	=> [1,2,3,4,5,[6,7,8]]
+	=> Error. No se puede convertir un Fixnum en un array.
+
